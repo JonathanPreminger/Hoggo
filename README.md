@@ -1,24 +1,11 @@
-# README
+Welcome in the Hoggo's Assurance App, 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please Download the repo and rails db:create db:migrate db:seed ans rails s 
 
-Things you may want to cover:
+Then, on your localhost webpage you can fill up a form for different type of assurance. 
 
-* Ruby version
+As the office part is not separate you can see all the Assurance'contract by type in the navbar link.
 
-* System dependencies
+Thank you for your attention, 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Joanthan Mete
