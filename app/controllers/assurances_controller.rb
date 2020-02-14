@@ -32,19 +32,10 @@ class AssurancesController < ApplicationController
     @cars = Assurance.car.all
   end
 
-  def edit
-    @assurance = Assurance.find(params[:id])
-  end
-
-  def destroy
-    @assurance = Assurance.find(params[:id])
-  end
-
   private
 
   def assurance_params
-    params.require(:assurance).permit(:email, :social_reason, :siret, :siren, :naf_code, :phone_number, :annual_incomes, :phone_number, :type, :dry_zone, :culture_type, :car_model, :licence_points, :registration_number, :building_size, :floor_number
-)
+    params.require(:assurance).permit(:email, :social_reason, :siret, :siren, :naf_code, :phone_number, :annual_incomes, :phone_number, :type, :dry_zone, :culture_type, :car_model, :licence_points, :registration_number, :building_size, :floor_number)
   end
 
 end
