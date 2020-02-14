@@ -1,0 +1,40 @@
+<div style="padding:50px;color:#4d5061">
+  <h1>Car</h1>
+  <div class="row margin-left width-100">
+    <table>
+      <caption>________________</caption>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Type</th>
+        <th scope="col">Email</th>
+        <th scope="col">social_reason</th>
+        <th scope="col">siret</th>
+        <th scope="col">siren</th>
+        <th scope="col">naf_code</th>
+        <th scope="col">annual_incomes</th>
+        <th scope="col">phone_number</th>
+        <th scope="col">licence_points</th>
+        <th scope="col">car_model</th>
+        <th scope="col">registration_number</th>
+      </tr>
+      <% @cars.each do |c| %>
+      <tr>
+          <th scope="row"><%= c.id %></th>
+          <td><%= c.type %></td>
+          <td><%= c.email %></td>
+          <td><%= c.social_reason %></td>
+          <td><%= c.siret %></td>
+          <td><%= c.siren %></td>
+          <td><%= c.naf_code %></td>
+          <td><%= c.annual_incomes %></td>
+          <td><%= c.phone_number %></td>
+          <td><%= c.licence_points %></td>
+          <td><%= c.car_model %></td>
+          <td><%= c.registration_number %></td>
+      </tr>
+      <% end %>
+    </table>
+
+    </div>
+  </div>
+</div>

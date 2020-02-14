@@ -1,0 +1,52 @@
+<div class="main-block">
+  <div class="main-form">
+  <h1>Thanks for trusting us</h1>
+  </div>
+  <div class="main-form2">
+      <% if @assurance.invalid? %>
+      <div class="alert alert-danger">
+        <% @assurance.errors.full_messages.each do |messages| %>
+        <p><%= messages %></p>
+        <%end%>
+      </div>
+      <% end %>
+      <%= form_for @assurance do |f| %>
+      <h3 class="text-center small-margin-bottom font-weight-bold">Main informations</h3>
+      <p>Email :</p>
+      <p> <%= f.text_field :email, placeholder:"Email...", id:""%><br></p>
+      <p>Phone :</p>
+      <p> <%= f.text_field :phone_number, placeholder:"in 10 number", id:""%><br></p>
+      <p>SIRET :  </p>
+      <p><%= f.text_field :siret, placeholder:"in 14 number ", id:""%><br></p>
+      <p>SIREN : </p>
+      <p><%= f.text_field :siren, placeholder:"in 9 number ", id:""%><br></p>
+      <p>NAF CODE  : </p>
+      <p><%= f.text_field :naf_code, placeholder:"in 5 number", id:""%><br></p>
+      <p>The social reason : </p>
+      <p><%= f.text_field :social_reason, placeholder:"max 20 characters...", id:""%><br></p>
+      <p>Annual incomes : </p>
+      <p><%= f.text_field :annual_incomes, placeholder:"numbers only", id:""%> dollars<br></p>
+      <p>Please set the type of your contract : </p>
+      <p><%= f.select :type, options_for_select([["", ""], ["Car", "Car"],["Agricultural", "Agricultural"],["Immovable", "Immovable"]]) %></p>
+      <h3 class="text-center small-margin-bottom font-weight-bold">For a agricultural contract please fill up those fields : </h3>
+      <p>Set the cultural type : </p>
+      <p><%= select_tag :culture_type, options_for_select(Assurance.culture_types), :include_blank => true %></p>
+      <p>Check the box if it's a dry zone </p>
+      <p><%= f.check_box :dry_zone %> <br /></p>
+      <h3 class="text-center small-margin-bottom font-weight-bold">For a car contract please fill up those fields : </h3>
+      <p>Car model </p>
+      <p><%= f.text_field :car_model, placeholder:"Car model..." %> <br /></p>
+      <p>Number of points left on the driving licence </p>
+      <p><%= f.text_field :licence_points, placeholder:"max 99" %> <br /></p>
+      <p>The 7 number of your registration number : </p>
+      <p><%= f.text_field :registration_number, placeholder:"in 7 number" %> <br /></p>
+      <h3 class="text-center small-margin-bottom font-weight-bold">For a immovable contract please fill up those fields : </h3>
+      <p>Building size : </p>
+      <p><%= f.text_field :building_size, placeholder:"in metre, max 9999" %> metre<br /></p>
+      <p>Number of floor : </p>
+      <p><%= f.text_field :floor_number, placeholder:"max 99" %> floor <br /></p>
+      <p class="text-center margin-top"><%= f.submit class:"btn btn-outline-success" %></p>
+      <p class="text-center font-italic">We will send you a quote with the price</p>
+    <% end %>
+  </div>
+</div>

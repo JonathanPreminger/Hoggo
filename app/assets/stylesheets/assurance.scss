@@ -1,0 +1,65 @@
+// Place all the styles related to the Assurance controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.margin-left {
+  margin-left: 5%;
+}
+.width-100 {
+  width: 100%;
+  padding: 5%;
+}
+th {
+  width:50px;
+}
+tr {
+  width:50px;
+}
+.main-block {
+  margin:0%;
+  padding:5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-form {
+  margin-left: -4%;
+  color:#9bad87;
+  font-size: 30px;
+  padding:5%;
+  width: 45%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.main-form2 {
+  color:#9bad87;
+  padding:5%;
+  width: 50%;
+  border: solid 0.5px #b6cb9e;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.small-margin-bottom {
+  margin-bottom: 20px;
+}
+.margin-top {
+  margin-top:80px;
+}
+table {
+  font-size: 75%;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}

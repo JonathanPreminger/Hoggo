@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">HOGGO APP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "New assurance", new_assurance_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Index", assurances_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Immovable", assurances_immovable_all_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Car", assurances_car_all_path, class:'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Agricultural", assurances_agricultural_all_path, class:'nav-link' %>
+      </li>
+    </ul>
+  </div>
+</nav>

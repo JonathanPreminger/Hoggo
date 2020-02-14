@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  social_reason: MyString
+  siret: MyString
+  siren: MyString
+  naf_code: MyString
+  price_max: 1
+  annual_incomes: 1
+  phone_number: MyString
+
+two:
+  email: MyString
+  social_reason: MyString
+  siret: MyString
+  siren: MyString
+  naf_code: MyString
+  price_max: 1
+  annual_incomes: 1
+  phone_number: MyString

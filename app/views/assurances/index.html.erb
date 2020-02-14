@@ -1,0 +1,47 @@
+<div style="padding:50px;color:#4d5061">
+  <h1>Assurance</h1>
+  <div class="row margin-left width-100">
+    <table>
+      <caption></caption>
+      <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Type</th>
+          <th scope="col">Email</th>
+          <th scope="col">social_reason</th>
+          <th scope="col">siret</th>
+          <th scope="col">siren</th>
+          <th scope="col">naf_code</th>
+          <th scope="col">annual_incomes</th>
+          <th scope="col">phone_number</th>
+          <th scope="col">building_size</th>
+          <th scope="col">floor_number</th>
+          <th scope="col">culture_type</th>
+          <th scope="col">dry_zone</th>
+          <th scope="col">licence_points</th>
+          <th scope="col">car_model</th>
+          <th scope="col">registration_number</th>
+      </tr>
+      <% @assurances.each do |a| %>
+      <tr>
+          <th scope="row"><%= a.id %></th>
+          <td><%= a.type %></td>
+          <td><%= a.email %></td>
+          <td><%= a.social_reason %></td>
+          <td><%= a.siret %></td>
+          <td><%= a.siren %></td>
+          <td><%= a.naf_code %></td>
+          <td><%= a.annual_incomes %></td>
+          <td><%= a.phone_number %></td>
+          <td><%= a.building_size %></td>
+          <td><%= a.floor_number %></td>
+          <td><%= a.culture_type %></td>
+          <td><%= a.dry_zone %></td>
+          <td><%= a.licence_points %></td>
+          <td><%= a.car_model %></td>
+          <td><%= a.registration_number %></td>
+      </tr>
+      <% end %>
+    </table>
+    </div>
+  </div>
+</div>
