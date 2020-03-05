@@ -16,7 +16,7 @@
         <th scope="col">building_size</th>
         <th scope="col">floor_number</th>
       </tr>
-      <% @immovables.each do |a| %>
+      <% @immovables.batch do |a| %>
       <tr>
           <th scope="row"><%= a.id %></th>
           <td><%= a.type %></td>

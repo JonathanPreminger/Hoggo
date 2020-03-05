@@ -25,7 +25,7 @@ Assurance.destroy_all
   puts "one more Agricultural Assurance created #{i + 1}"
 end
 5.times do |i|
-  Assurance.create(
+   Car.create(
     email: Faker::Internet.email,
     social_reason: Faker::Name.last_name ,
     siret: Faker::Number.number(digits: 14),
@@ -41,7 +41,7 @@ end
   puts "one more Car Assurance created #{i + 1}"
 end
 5.times do |i|
-  Assurance.create(
+  Immovable.create(
     email: Faker::Internet.email,
     social_reason: Faker::Name.last_name ,
     siret: Faker::Number.number(digits: 14),

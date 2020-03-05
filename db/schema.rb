@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_11_151340) do
+ActiveRecord::Schema.define(version: 2020_03_03_152314) do
 
   create_table "assurances", force: :cascade do |t|
     t.string "email"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_02_11_151340) do
     t.integer "licence_points"
     t.string "car_model"
     t.integer "registration_number"
+    t.text "serialized_options"
   end
 
 end
